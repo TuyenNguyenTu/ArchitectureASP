@@ -17,6 +17,7 @@ namespace ProjectWithArchitecture.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [EnableCors("MyPolicy")]
+    [ApiExplorerSettings(GroupName = "v1")]
     public class CategoryController : ControllerBase
     {
         private readonly ICategoryManager _categoryManager;

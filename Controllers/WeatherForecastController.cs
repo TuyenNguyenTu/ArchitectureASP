@@ -9,6 +9,7 @@ namespace ProjectWithArchitecture.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [ApiExplorerSettings(GroupName = "v2")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]

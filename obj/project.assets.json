@@ -8471,11 +8471,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\ASPWithVuejs\\web\\ProjectWithArchitecture\\ProjectWithArchitecture.csproj",
+      "projectUniqueName": "E:\\ASPWithVuejs\\web-project-2\\ProjectWithArchitecture\\ProjectWithArchitecture.csproj",
       "projectName": "ProjectWithArchitecture",
-      "projectPath": "E:\\ASPWithVuejs\\web\\ProjectWithArchitecture\\ProjectWithArchitecture.csproj",
+      "projectPath": "E:\\ASPWithVuejs\\web-project-2\\ProjectWithArchitecture\\ProjectWithArchitecture.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "E:\\ASPWithVuejs\\web\\ProjectWithArchitecture\\obj\\",
+      "outputPath": "E:\\ASPWithVuejs\\web-project-2\\ProjectWithArchitecture\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
