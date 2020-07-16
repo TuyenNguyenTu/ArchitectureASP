@@ -83,8 +83,8 @@ namespace ProjectWithArchitecture
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Quản lý Category V1");
-                c.SwaggerEndpoint("/swagger/v2/swagger.json", "Quản lý WeatherForecast");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Management_Category_V1");
+                c.SwaggerEndpoint("/swagger/v2/swagger.json", "Management_WeatherForecast");
 
             });
 

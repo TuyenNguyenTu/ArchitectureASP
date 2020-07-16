@@ -42,16 +42,26 @@ namespace ProjectWithArchitecture.Controllers
 
         // POST: api/Category
         [HttpPost]
-        public async Task<long> Post(Category category)
+        public async Task<long> Post(CategoryCreateRequestDto category)
         {
-            return await _categoryManager.Add(category);
+            return await _categoryManager.Add(new Category { 
+            Name= category.Name,
+            Description = category.Description,
+            ParentId = category.ParentId,
+            Status = category.Status});
 
         }
 
         [HttpPut]
-        public async Task<bool> Put(Category category)
+        public async Task<bool> Put(CategoryUpdateRequest category)
         {
-            return await _categoryManager.Update(category);
+            return await _categoryManager.Update(new Category { 
+                Id = category.Id,
+                Name = category.Name,
+                ParentId = category.ParentId,
+                Status = category.Status,
+                Description = category.Description  
+            });
         }
 
         [HttpDelete("{id}")]
