@@ -27,9 +27,15 @@ namespace ProjectWithArchitecture.Repository
         public async Task<bool> Delete(long id)
         {
             var entity = _context.Categories.Find(id);
-            _context.Categories.Remove(entity);
-            await _context.SaveChangesAsync();
-            return true;
+            if (entity != null)
+            {
+                _context.Categories.Remove(entity);
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            else
+                return false;
+
         }
 
         public async Task<Category> Get(long Id)
