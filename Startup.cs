@@ -53,6 +53,7 @@ namespace ProjectWithArchitecture
 
             services.AddSwaggerGen(c =>
             {
+                c.SwaggerDoc("v2", new OpenApiInfo { Title = "My API - V2", Version = "v2" });
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Quản lý Category", Version = "v1" });
             });
 
@@ -82,7 +83,9 @@ namespace ProjectWithArchitecture
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Quản lý Category V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Management_Category_V1");
+                c.SwaggerEndpoint("/swagger/v2/swagger.json", "Management_WeatherForecast");
+
             });
 
             app.UseEndpoints(endpoints =>
